@@ -11,7 +11,7 @@ class BasePage:
         self.driver = driver
         self.timeout = 30
 
-    def find_element(self, *locator):
+    def find_element(self, locator):
         return self.driver.find_element(*locator)
 
     def open(self):
