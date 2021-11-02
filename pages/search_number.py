@@ -1,3 +1,5 @@
+from selenium.webdriver.common.keys import Keys
+
 from utils.locators import PageLocator
 from pages.base_page import BasePage
 
@@ -15,3 +17,8 @@ class SearchNumber(BasePage):
 
     def search_number(self, number=""):
         self.find_element(self.locator.SEARCH_BY_CLASS).send_keys(number)
+
+    def search_number_and_return(self, number=""):
+        elem = self.find_element(self.locator.SEARCH_BY_CLASS)
+        elem.send_keys(number)
+        elem.send_keys(Keys.RETURN)

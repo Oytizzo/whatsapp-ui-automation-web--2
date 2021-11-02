@@ -25,6 +25,5 @@ search_box = SearchNumber(driver)
 search_box.open()
 
 search_box.search_number(number)
-print("=" * 50)
-print("searched the number and shown it to the display")
-print("=" * 50)
+
+print("============TC-001=============")
