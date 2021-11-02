@@ -25,3 +25,6 @@ class BasePage:
             print("\n * Element not found within given time. --> %s" %(locator[1]))
         except Exception as e:
             print(e)
+
+    def find_elements(self, locator):
+        return self.driver.find_elements(*locator)

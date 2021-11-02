@@ -31,3 +31,6 @@ class SearchNumber(BasePage):
         self.type_message(message)
         elem = self.find_element(self.locator.SEND_BUTTON)
         elem.click()
+
+    def msg_check(self):
+        return self.find_elements(self.locator.MSG_CHECK)
