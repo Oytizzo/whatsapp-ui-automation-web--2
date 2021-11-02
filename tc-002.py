@@ -25,5 +25,6 @@ search_box = SearchNumber(driver)
 search_box.open()
 
 search_box.search_number_and_return(number)
-
+msg = "Hello world"
+search_box.enter_message(msg)
 print("==============TC-002==============")

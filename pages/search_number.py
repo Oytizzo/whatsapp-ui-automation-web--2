@@ -22,3 +22,12 @@ class SearchNumber(BasePage):
         elem = self.find_element(self.locator.SEARCH_BY_CLASS)
         elem.send_keys(number)
         elem.send_keys(Keys.RETURN)
+
+    def type_message(self, message=""):
+        elem = self.find_element(self.locator.MESSAGE_BOX_BY_XPATH)
+        elem.send_keys(message)
+
+    def enter_message(self, message=""):
+        self.type_message(message)
+        elem = self.find_element(self.locator.SEND_BUTTON)
+        elem.click()

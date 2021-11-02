@@ -46,3 +46,6 @@ search_box.search_number_and_return(number)
 # b.send_keys(number)
 
 print("searched the number")
+msg = "."
+search_box.enter_message(msg)
+print("==================sent msg=================")
